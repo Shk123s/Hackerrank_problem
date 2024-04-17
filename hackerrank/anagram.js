@@ -15,10 +15,26 @@ function anagram(str1, str2) {
     obj[ch]--;
   }
   return true;
+} 
+function anagram2(str,str1){
+  obj2 ={}
+  for (const  char of str) {
+    obj2[char] = (obj2[char] || 0)+1
+    console.log(obj2)
+  }
+  
+  for (const char of str1) {
+    if (!obj2[char]) {
+      return false
+    }
+    obj2[char]--
+  }
+  return true
 }
-
 // console.log(anagram("act", "cat"));
-console.log(anagram("hello", "ehllo"));
+// console.log(anagram("hello", "ehllo"));
+console.log(anagram2("earth", "heart"));
+// console.log(anagram("silent", "listen"));
 
 // need to check all the string count store in the variable
 

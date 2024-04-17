@@ -16,4 +16,4 @@ function angryProfessor(k, a) {
 }              
 // angryProfessor(3,[-2,-1,0,1,2])
 angryProfessor(3,[-1 ,-3, 4, 2])
-// angryProfessor(2,[0 ,-1, 2, 1])
+angryProfessor(2,[0 ,-1, 2, 1])

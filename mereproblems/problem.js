@@ -12,3 +12,10 @@ fruits.addfunction("strawberry")
 for (const fruit of fruits) {
   console.log(fruits)
 }
+let str = "dddd00";
+
+String.prototype.addstringfunction = function (str){
+  return this.concat(str);
+}
+let ddd = str.addstringfunction("aaqqqq");
+console.log(ddd);
